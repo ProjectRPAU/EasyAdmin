@@ -54,7 +54,7 @@ async function logNewReport(report) {
     var reportMessage = generateReportEmbed(report)
 
 
-    var msg = await client.channels.cache.get(GetConvar("ea_botLogChannel", "")).send(reportMessage)
+    var msg = await client.channels.cache.get(GetConvar("ea_botReportChannel", "")).send(reportMessage)
     reports[reportId].msg = msg
 
 
